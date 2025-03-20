@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgba(1, 15, 1, 0.914);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 90px ;
+}
+.logo {
+    text-decoration: none;
+    color: forestgreen;
+    font-weight: 700;
+    font-size: 1.8em;
+    font-family: 'Brillant', serif;
+}
+.navigation a{
+    text-decoration: none;
+    color: forestgreen;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color: rgb(220, 255, 220);
+}
+
+/* the menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: rgba(1, 15, 1, 0.95); 
+  min-width: 160px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: forestgreen;
+  font-weight: 500;
+  font-size: 1em;
+  transition: 0.2s;
+}
+
+.dropdown-content a:hover {
+  background: rgba(34, 80, 34, 0.8);
+  color: rgb(220, 255, 220);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+
+
+section {
+    padding: 100px 100px;
+
+}
+.main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0)), 
+    url("imges/86127b0f3ecc9ac091f1b5aa1ce283654bf0d5c9.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+.main h2{
+    color:rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.main h2 span{
+    color: forestgreen;
+    font-size: 3em;
+    font-weight: 600;
+    animation: animate 1s ease-in-out infinite alternate;
+}
+.main h3{
+    color:rgb(197, 255, 201);
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.main-btn{
+    text-decoration: none;
+    color:rgb(197, 255, 201);
+    background-color: darkgreen;
+    font-size: 1.1;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    transition: 0.4s ease;
+}
+.main-btn:hover{
+    background-color: forestgreen;
+    color: rgb(232, 255, 235);
+    transform: scale(1.2,1.1);
+}
+
+@keyframes animate{
+    from{
+        text-shadow: 0 0 10px #0ab52f60;
+    }
+    to{
+        text-shadow: 0 0 15px #0ab52f5f,
+         0 0 5px #0ab52f5f;
+    }
+}
+
+.heading {
+    text-align: center;
+    padding: 20px 20px;
+    background-color: #1b3d1b;
+    color: #ffffff;
+    font-size: 3rem;
+  }
+  
+  .heading h1 {
+    font-size: 2.5rem;
+    color: rgb(197, 255, 201);
+    margin-bottom: 10px;
+  }
+  
+  .heading p {
+    font-size: 1.1rem;
+    color: rgb(197, 255, 201);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+.container {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 20px;
+  position: relative;
+  background-image: url('imges/wallpaperflare.com_wallpaper\ (5).jpg');
+  background-attachment:fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8));
+  z-index: 1;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1100px;
+  padding: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.about_img {
+  overflow: hidden;
+  border-radius: 10px;
+  border: 3px solid #3a6b52;
+}
+
+.about_img img {
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.6s ease-in-out;
+}
+
+.about_img img:hover {
+  transform: scale(1.2);
+}
+
+.about_content {
+  flex: 1;
+  color: #ffffff;
+}
+
+.about_content h2 {
+  font-size: 2rem;
+  color: #e4e4e4;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.about_content p {
+  font-size: 1.1rem;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.6;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+/* Section Separator */
+.section-separator {
+  text-align: center;
+  padding: 10px 10px;
+  background-color: #ffffff;
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+.section-separator h3 {
+  font-size: 22px;
+  color: #2c5e2e;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #4caf50;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+/* Deep Cam Section */
+.deep-cam {
+  text-align: center;
+  background: url('imges/wallpaperflare.com_wallpaper\ \(4\).jpg') no-repeat center center/cover;
+  padding: 150px;
+  width: 100%;
+  position: relative;
+  color: white;
+}
+
+.deep-cam::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Darker overlay */
+  z-index: 1;
+}
+
+.deep-cam h2{
+  font-size: 70px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+.dep-cam p{
+  font-size: 20px;
+  font-weight: 30;
+}
+
+.deep-cam button {
+  position: relative;
+  z-index: 2;
+}
+
+/* Deep Cam Buttons */
+.deep-cam button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 25px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.4s;
+  color: white;
+  font-weight: 500;
+  background: #1e6321;
+  width: 250px;
+  margin: 15px auto;
+  position: relative;
+  z-index: 2;
+}
+
+.deep-cam button:hover {
+  background-color: rgb(71, 200, 71);
+  color: rgb(226, 255, 233);
+  transform: scale(1.1);
+}
+
+/* icons */
+.deep-cam button i {
+  font-size: 24px;
+}
+
+
+/* DeepBot Section */
+.deepbot-section {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(13, 45, 13, 0.192)), 
+                url(imges/Firefly\ plant\ robot\ in\ the\ garden\ cover\ with\ leaves\ with\ dark\ green\ them\ 83885.jpg) no-repeat center center/cover;
+    padding: 120px;
+    color: white;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+.deepbot-section h2 {
+  color: #3a724d;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.deepbot-section h2 span{
+  font-size: 3em;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.deepbot-section p {
+  font-size: 18px;
+  color: #3a724d;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+  font-weight: 500;
+
+}
+
+/* DeepBot Button */
+.deepbot-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 30px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.4s;
+  font-weight: bold;
+  width: 220px;
+  color: rgb(94, 230, 112);
+  background: #034505;
+}
+
+.deepbot-btn:hover {
+  
+  background-color: forestgreen;
+  color: rgb(255, 255, 255);
+  transform: scale(1.2,1.1);
+}
+
+
+/* Soil Care Section */
+.soil-care {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(13, 45, 13, 0.192)), 
+  url(imges/soil\ in\ garden\ with\ peat\ pot\ and\ seeds\ on\ it\,\ close-up\ view;\ 33406.jpg) no-repeat center center/cover;  color: white;
+  padding: 200px 200px;
+  position: relative;
+}
+.soil-care h2 {
+  font-size: 70px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);}
+
+/* Button*/
+.soil-care .go-under {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 25px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.4s;
+  color: rgb(254, 232, 221);
+  font-weight:500;
+  background: #502805;
+  width: 250px;
+  margin: 15px auto;
+  position: relative;
+  z-index: 2;
+}
+
+.soil-care .go-under:hover {
+  background-color: #cf9972;
+  transform: scale(1.2,1.1);
+  color: rgb(255, 255, 255);
+
+}
