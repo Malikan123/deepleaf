@@ -129,15 +129,8 @@ section {
     transform: scale(1.2,1.1);
 }
 
-@keyframes animate{
-    from{
-        text-shadow: 0 0 10px #0ab52f60;
-    }
-    to{
-        text-shadow: 0 0 15px #0ab52f5f,
-         0 0 5px #0ab52f5f;
-    }
-}
+
+
 
 .heading {
     text-align: center;
@@ -284,6 +277,12 @@ section {
 .deep-cam button {
   position: relative;
   z-index: 2;
+}
+
+#preview img {
+    max-width: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
 /* Deep Cam Buttons */
